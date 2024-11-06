@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "drizzle-kit": "^0.20.17",
+    "drizzle-orm": "^0.30.9",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@repo/constants": "*",
+    "@repo/prettier-config": "*",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@repo/utils": "*",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
+    "@types/pg": "^8.11.5",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "name": "@repo/database",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "generate": "drizzle-kit generate:pg",
+    "lint": "eslint . --fix"
+  },
+  "version": "0.0.0"
+}

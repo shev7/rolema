@@ -1,0 +1,2 @@
+ALTER TABLE "event_participant" ADD COLUMN "id" varchar(16) DEFAULT md5(random()::text)::varchar(16) NOT NULL;--> statement-breakpoint
+ALTER TABLE "event_participant" ADD CONSTRAINT "event_participant_id_unique" UNIQUE("id");

@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@repo/constants": "*",
+    "@repo/eslint-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "@repo/utils": "*",
+    "@types/eslint": "^8.56.5",
+    "@types/jest": "^29.5.2",
+    "eslint": "^8.57.0",
+    "jest": "^29.5.0",
+    "typescript": "^5.3.3"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "name": "@repo/validation",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "test": "jest --passWithNoTests"
+  },
+  "version": "0.0.0"
+}

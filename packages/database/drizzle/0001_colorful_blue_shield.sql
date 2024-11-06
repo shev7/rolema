@@ -1,0 +1,1 @@
+ALTER TABLE "project_user" ADD COLUMN "id" varchar(8) DEFAULT md5(random()::text)::varchar(8) NOT NULL;

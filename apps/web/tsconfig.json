@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@actions/*": ["./lib/utils/actions/*"],
+      "@api/*": ["./lib/api/*"],
+      "@components/*": ["./lib/components/*"],
+      "@pages/*": ["./lib/pages/*"],
+      "@queries/*": ["./lib/utils/queries/*"],
+      "@cookies/*": ["./lib/utils/cookies/*"],
+      "@middleware/*": ["./lib/utils/middleware/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "exclude": ["node_modules"],
+  "extends": "@repo/typescript-config/nextjs.json",
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ]
+}

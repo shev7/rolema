@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@nestjs-modules/mailer": "^2.0.2",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "bcrypt": "^5.1.1",
+    "pg": "^8.11.5",
+    "zod": "^3.23.4",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@repo/prettier-config": "*",
+    "@repo/database": "*",
+    "@repo/validation": "*",
+    "@repo/types": "*",
+    "@repo/eslint-config": "*",
+    "@repo/constants": "*",
+    "@repo/utils": "*",
+    "@repo/typescript-config": "*",
+    "@types/eslint": "^8.56.5",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./services": "./dist/services/index.js",
+    "./decorators": "./dist/decorators/index.js",
+    "./filters": "./dist/filters/index.js",
+    "./guards": "./dist/guards/index.js",
+    "./interceptors": "./dist/interceptors/index.js",
+    "./pipes": "./dist/pipes/index.js"
+  },
+  "name": "@repo/nest",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix"
+  },
+  "version": "0.0.0"
+}

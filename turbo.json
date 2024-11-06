@@ -1,0 +1,42 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalDotEnv": [".env"],
+  "globalEnv": [
+    "API_ENDPOINT",
+    "ADMIN_API_PORT",
+    "WEB_API_PORT",
+    "AUTH_API_PORT",
+    "DB_URL",
+    "AUTH_PASSWORD",
+    "NEXT_PUBLIC_ADMIN_API_ENDPOINT",
+    "NEXT_PUBLIC_WEB_API_ENDPOINT",
+    "NEXT_PUBLIC_AUTH_API_ENDPOINT",
+    "MAILER_SERVICE",
+    "MAILER_EMAIL",
+    "MAILER_PASSWORD",
+    "WEB_APP_URL",
+    "NODE_ENV",
+    "POSTGRES_DB",
+    "POSTGRES_DEFAULT_PORT",
+    "POSTGRES_HOST",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_USER"
+  ],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "cache": false
+    }
+  }
+}

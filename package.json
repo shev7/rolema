@@ -1,0 +1,60 @@
+{
+  "name": "rolema",
+  "private": true,
+  "scripts": {
+    "clear": "npx rimraf --glob **/node_modules",
+    "prepare": "husky install",
+    "build": "node scripts/build-packages.js && turbo build",
+    "build:packages": "node scripts/build-packages.js",
+    "dev": "cross-env NODE_ENV=development dotenv -- turbo dev",
+    "test": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" NODE_ENV=test dotenv -- turbo test",
+    "test:web-api": "cross-env NODE_ENV=test dotenv -- turbo test --filter=web-api",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start": "cross-env NODE_ENV=development dotenv -- turbo dev",
+    "db": "docker compose up database -d"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@repo/constants": "*",
+    "@repo/database": "*",
+    "@repo/eslint-config": "*",
+    "@repo/i18n": "*",
+    "@repo/prettier-config": "*",
+    "@repo/types": "*",
+    "@repo/typescript-config": "*",
+    "@repo/ui": "*",
+    "@repo/utils": "*",
+    "@repo/validation": "*",
+    "@types/lodash.get": "^4.4.9",
+    "@types/lodash.isempty": "^4.4.9",
+    "commitizen": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "engines": {
+    "node": "20.11.1"
+  },
+  "packageManager": "npm@10.2.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "bcrypt": "^5.1.1",
+    "lodash.get": "^4.4.2",
+    "lodash.isempty": "^4.4.0",
+    "react-awesome-reveal": "^4.2.12"
+  }
+}

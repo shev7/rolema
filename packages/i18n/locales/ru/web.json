@@ -1,0 +1,21 @@
+{
+  "create a new role": "Создать новую роль",
+  "delete project user": "Удалить пользователя проекта",
+  "delete role": "Удалить роль",
+  "edit project user": "Редактировать пользователя проекта",
+  "edit user": "Редактировать пользователя",
+  "fallback role": "Новая роль",
+  "log in to rolema": "Войти в Rolema",
+  "project successfully updated": "Проект успешно обновлен",
+  "role successfully created": "Роль успешно создана",
+  "role successfully deleted": "Роль успешно удалена",
+  "role successfully updated": "Роль успешно обновлена",
+  "select a fallback role": "Выберите новую роль",
+  "update role": "Обновить роль",
+  "user role successfully updated": "Роль пользователя успешно обновлена",
+  "event is not found": "Событие не найдено",
+  "start date must go before end date": "Дата начала должна быть раньше даты окончания",
+  "project user is not found": "Участник проекта не найден",
+  "event participants should not include event creator": "В число участников мероприятия не должен входить его создатель",
+  "some of provided participants are not related to the project": "Некоторые из предоставленных участников не имеют отношения к проекту"
+}

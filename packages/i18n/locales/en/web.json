@@ -1,0 +1,21 @@
+{
+  "create a new role": "Create a new role",
+  "delete project user": "Delete project user",
+  "delete role": "Delete role",
+  "edit project user": "Edit project user",
+  "edit user": "Edit user",
+  "fallback role": "Fallback role",
+  "log in to rolema": "Log in to Rolema",
+  "project successfully updated": "Project successfully updated",
+  "role successfully created": "Role successfully created",
+  "role successfully deleted": "Role successfully deleted",
+  "role successfully updated": "Role successfully updated",
+  "select a fallback role": "Select a fallback role",
+  "update role": "Update role",
+  "user role successfully updated": "User role successfully updated",
+  "event is not found": "Event is not found",
+  "start date must go before end date": "Start date must go before end date",
+  "project user is not found": "Project user is not found",
+  "event participants should not include event creator": "Event participants should not include event creator",
+  "some of provided participants are not related to the project": "Some of provided participants are not related to the project"
+}

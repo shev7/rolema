@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+div[data-is-root-theme="true"] {
+  background-color: var(--gray-1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+div[data-is-root-theme="true"].radix-themes {
+  --default-font-family: var(--font-inter);
+}
+
+.PageContentWithMenu > *:last-child {
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "extends": "@repo/typescript-config/base.json",
+  "include": [
+    ".",
+    "turbo"
+  ]
+}

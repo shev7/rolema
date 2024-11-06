@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/rolema",
+  "sourceRoot": "apps/rolema/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/rolema/tsconfig.app.json"
+  },
+  "projects": {
+    "rolema": {
+      "type": "application",
+      "root": "apps/rolema",
+      "entryFile": "main",
+      "sourceRoot": "apps/rolema/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/rolema/tsconfig.app.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    }
+  }
+}
